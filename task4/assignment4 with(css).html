@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #555;
+        }
+        .about-us-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+        .about-us-text {
+            flex: 1;
+            padding-right: 30px;
+            min-width: 300px;
+        }
+        .about-us-text p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .skills-section {
+            flex: 1;
+            min-width: 300px;
+        }
+        .skill-item {
+            margin-bottom: 20px;
+        }
+        .skill-item h4 {
+            margin: 0;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .skill-bar-container {
+            background-color: #eee;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .skill-bar {
+            height: 100%;
+            background-color: #ff6347; 
+            border-radius: 4px;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .team-member {
+            text-align: center;
+            width: 250px; 
+            padding: 15px;
+            
+            border-radius: 8px;
+        }
+        .team-member img {
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #eee; 
+        }
+        .team-member h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .team-member p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        
+        .call-to-action {
+            text-align: center;
+            margin-top: 80px;
+            padding: 40px 20px;
+            background-color: #eee; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .call-to-action p {
+            margin: 0;
+            font-size: 1.3em;
+            color: #555;
+        }
+        .contact-button {
+            background-color: #ff6347; 
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-button:hover {
+            background-color: #e05030;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Us</h1>
+        <div class="about-us-content">
+            <div class="about-us-text">
+                <p>Pellentesque elementum libero enim, eget gravida nunc laoreet et. Nullam ac enim auctor, fringilla risus at, imperdiet turpis. Pellentesque elementum libero enim.</p>
+
+                <p>Pellentesque vel est eget nisi pretium, ac convallis orci. Vivamus quis erat, tristique vel ligula vitae, efficitur consectetur lorem. Proin eleifend pharetra dui et maximus. Mauris id pharetra nisl. Phasellus nec porta, blandit dui ac, viverra felis.</p>
+
+                <p>Nunc placerat et lacus pulvinar. Nullam auctor erat sed urna posuere volutpat. Morbi id elit et mi fermentum. Fusce tincidunt diam et bibendum porta.</p>
+
+                <p>Aliquam non felis, sagittis eu erat non, interdum vehicula urna. Vivamus congue diam sapien, eu pellentesque ipsum ultricies quis.</p>
+            </div>
+            <div class="skills-section">
+                <div class="skill-item">
+                    <h4>Branding <span>90%</span></h4>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>Web Design <span>85%</span></h4>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>Graphic Design <span>85%</span></h4>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>Development <span>70%</span></h4>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Our Team</h2>
+        <p style="text-align: center; margin-bottom: 50px; color: #434141;">Vestibulum ante ipsum primis in faucibus orci. Morbi tincidunt ipsum id imperdiet. Vestibulum ante ipsum primis in faucibus orci. Morbi tincidunt ipsum id imperdiet. Vestibulum ante ipsum primis in faucibus orci.</p>
+
+        <div class="team-members">
+            <div class="team-member">
+                <img src="images/Screenshot 2025-07-08 171948.png" alt="Michael Broad">
+                <h3>Michael Broad</h3>
+                <p>Web Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="images/Screenshot 2025-07-08 171957.png" alt="Jeannette Crow">
+                <h3>Jeannette Crow</h3>
+                <p>CEO Founder</p>
+            </div>
+            <div class="team-member">
+                <img src="images/Screenshot 2025-07-08 172006.png" alt="Martin Lawrence">
+                <h3>Martin Lawrence</h3>
+                <p>App Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="images/Screenshot 2025-07-08 172014.png" alt="Isabella Dawson">
+                <h3>Isabella Dawson</h3>
+                <p>Creative Director</p>
+            </div>
+        </div>
+
+        <div class="call-to-action">
+            <p>Do you have any ideas?</p>
+            <a href="#" class="contact-button">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>
