@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+</head>
+<body style="color: white;">
+    <fieldset style="background-color:rgb(60, 60, 216);">
+        <legend style="background-color:red ;">Personal Data</legend>
+        <fieldset style="background-color: red;">
+            <legend style="background-color: rgb(57, 57, 198);">Your Name</legend>
+            <form style="margin-top: 40px;">
+                <p>
+                    <label for="firstname">First Name :</label>
+                <input type="text" id="firstname" name="firstname" placeholder="ex ahmed" required>
+                </p>
+            
+
+                <p>
+                    <label for="lastname">Last Name :</label>
+                <input type="text" id="lastname" name="lastname" placeholder="ex eldeeb" required>
+                </p>
+            </form>
+        </fieldset>
+        <form style="margin-top: 60px;">
+            <p style="margin-left: 8px;">
+            <label for="Your-Phone">Your-Phone :</label>
+            <input type="text" id="Your-Phone" name="Your-Phone">
+            </p> 
+        
+            <p style="margin-left: 45px;">
+            <label for="UserEmail">Email :</label>
+            <input type="email" id="UserEmail" name="UserEmail">
+            </p>
+        
+            <p style="margin-left: 24px;">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"  required>
+            </p>
+        
+            <p><label for="Re-Password">Re-Password:</label>
+            <input type="password" id="Re-password" name="Re_password" required>
+            </p>
+        
+        <select name="country" style="margin-top: 250px;">
+            <optgroup label="Egypt">
+                <option value="Cairo">cairo</option>
+                <option value="Alexandria">Alexandria</option>
+                <option value="Mansoura">Mansoura</option>
+            </optgroup>
+            <optgroup label="UEA">
+                <option value="Abu Dhabi">Abu Dhabi</option>
+                <option value="Ajman">Ajman</option>
+                <option value="Sharjah">Sharjah</option>
+            </optgroup>
+            <optgroup label="Saudi Arabia">
+                <option value="Riyadh">Riyadh</option>
+                <option value="Jeddah">Jeddah</option>
+                <option value="Dammam">Dammam</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <button type="submit" style="background-color: red; color: white;">SUBMIT</button>
+        </form>
+    </fieldset>
+</body>
+</html>
