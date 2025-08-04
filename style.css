@@ -1,0 +1,1011 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #282828;
+    overflow-x: hidden;
+}
+
+.top-bar {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 0.8em;
+    color: #666;
+    flex-wrap: wrap; 
+}
+
+.contact-info span {
+    margin-right: 15px;
+    white-space: nowrap; 
+}
+
+.contact-info span i {
+    color: #ff6600; 
+    margin-right: 5px;
+}
+
+.social-icons a {
+    margin-left: 10px;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff6600;
+}
+
+.main-nav {
+    background-color: #fff; 
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    flex-wrap: wrap;
+}
+
+.main-nav .logo {
+    font-family: 'Playfair Display', serif; 
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #333; 
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.main-nav ul li {
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.95em;
+}
+
+.main-nav ul li a:hover {
+    color: #ff6600;
+}
+
+
+.hero-section {
+    position: relative;
+    height: 80vh; 
+    background-image: url('your-pizza-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; 
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 30px 60px;
+    border-radius: 5px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif; 
+    font-size: 4em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.reserve-button {
+    background-color: #ff6600; 
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reserve-button:hover {
+    background-color: #e65c00;
+}
+
+
+.carousel-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+
+.arrow {
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    user-select: none; 
+
+}
+
+.arrow:hover {
+    color: white;
+}
+
+.menu-showcase-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 50px 0;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.bg-image {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.bg-left {
+    top: 50%;
+    left: -150px;
+    transform: translateY(-50%) rotate(-7deg);
+}
+
+.bg-right {
+    top: 50%;
+    right: -150px;
+    transform: translateY(-50%) rotate(7deg);
+}
+
+        .awards-container {
+            display: flex;
+            gap: 40px; /* Space between each award section */
+            flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+            justify-content: center;
+        }
+        .award-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 200px; /* Adjust width as needed */
+        }
+        .award-item img {
+            max-width: 100px; /* Adjust badge size */
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .award-item .title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        .award-item .description {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .award-item .stars {
+            color: gold; /* Or a specific yellow/orange for stars */
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .award-item .year {
+            font-size: 0.8em;
+            color: #777;
+        }
+
+.menu-card {
+    position: relative;
+    width: 450px;
+    height: 550px;
+    background-color: #000;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 2;
+    transform: rotate(0deg);
+}
+
+.card-image-overlay {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.card-content {
+    max-width: 80%;
+}
+
+.card-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.card-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.view-more-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-more-button:hover {
+    background-color: #e65c00;
+    transform: translateY(-2px);
+}
+
+/* --- Testimonials Section --- */
+.testimonials-section {
+    background-color: #f8f8f8;
+    padding: 80px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.testimonials-section .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    color: #444;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.testimonials-section .section-tagline {
+    font-family: 'Lora', serif;
+    font-size: 1.4em;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 60px;
+    line-height: 1.5;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    width: 45%;
+    max-width: 500px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 320px;
+}
+
+.testimonial-card .quote-icon {
+    font-size: 3.5em;
+    color: #ff6600;
+    line-height: 1;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+}
+
+.testimonial-card .testimonial-text {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.reviewer-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 3px solid #ff6600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.reviewer-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewer-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.reviewer-source {
+    font-family: 'Lora', serif;
+    font-size: 0.9em;
+    color: #888;
+    font-style: italic;
+}
+
+.testimonials-container .carousel-arrow {
+    background: none;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.testimonials-container .carousel-arrow:hover {
+    background-color: #ff6600;
+    color: white;
+}
+
+/* --- Chef Special Menu Section (Grid of Pizzas) --- */
+.chef-special-menu-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    color: #333;
+}
+
+.menu-items-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-item-card {
+    background-color: #fff;
+    text-align: center;
+}
+
+.item-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.chef-special-tag {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background-color: #ff6600;
+    color: white;
+    padding: 8px 15px;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 10;
+}
+
+.item-title {
+    font-size: 1.4em;
+    color: #444;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.item-price {
+    color: #ff6600;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.item-description {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* --- Booking Section (Make Your Order!) --- */
+.booking-section {
+    display: flex;
+    align-items: center;
+    background-image: url('light-wood-texture.jpg'); /* REPLACE WITH YOUR WOOD TEXTURE IMAGE */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    min-height: 400px;
+}
+
+.booking-content {
+    flex: 2;
+    padding-left: 10%;
+    padding-right: 50px;
+    color: #555;
+    text-align: left;
+}
+
+.booking-title {
+    font-size: 2.8em;
+    color: #444;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.booking-title .highlight {
+    color: #ff6600;
+}
+
+.booking-text {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.book-now-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-now-button:hover {
+    background-color: #e65c00;
+    transform: translateY(-2px);
+}
+
+.booking-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.booking-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 450px;
+    width: 650px; /* Adjust to control visibility */
+    transform: translateX(20%); /* Push it slightly off-screen */
+}
+
+/* --- Newsletter Section --- */
+.newsletter-section {
+    background-color: #ff6600;
+    padding: 30px 10%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.newsletter-text-content {
+    flex: 2;
+    text-align: left;
+}
+
+.newsletter-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.newsletter-description {
+    font-size: 0.9em;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.newsletter-form {
+    flex: 1.2;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    min-width: 300px;
+}
+
+.email-input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    font-size: 1em;
+}
+
+.email-input::placeholder {
+    color: rgba(255,255,255,0.8);
+    opacity: 1;
+}
+
+.email-input:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.3);
+}
+
+.subscribe-button {
+    background-color: white;
+    color: #ff6600;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.subscribe-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* --- Main Footer Section --- */
+.main-footer {
+    background-color: #8B4513; /* A warm brown color */
+    color: white;
+    padding-top: 60px;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.footer-content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    padding-bottom: 40px; /* Space between content and bottom footer bar */
+}
+
+.footer-column h3 {
+    font-size: 1.5em;
+    color: #ff6600; /* Orange heading color */
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* About Us Column */
+.about-us-column p {
+    font-size: 0.95em;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* Instagram Column */
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Space between Instagram images */
+}
+
+.instagram-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.instagram-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Us Column */
+.contact-us-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-us-column ul li {
+    margin-bottom: 15px;
+    display: flex; /* For icon and text alignment */
+    align-items: flex-start;
+    font-size: 0.95em;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.contact-us-column ul li i {
+    margin-right: 10px;
+    color: #ff6600; /* Orange icons */
+    font-size: 1.1em;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+    padding-top: 2px; /* Adjust icon vertical alignment */
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+    background-color: #5A2C00; /* Darker brown for the very bottom bar */
+    padding: 20px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85em;
+    color: lightgray;
+    flex-wrap: wrap; /* Allow elements to wrap */
+}
+
+.footer-bottom p {
+    margin: 0;
+    flex-grow: 1; /* Allow copyright text to grow */
+}
+
+.back-to-top-arrow {
+    background-color: #ff6600;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0; /* Prevent button from shrinking */
+    margin-left: 20px; /* Space from copyright text */
+}
+
+.back-to-top-arrow:hover {
+    background-color: #e65c00;
+}
+
+/* --- Responsive Adjustments (Consolidated) --- */
+
+@media (max-width: 1024px) {
+    /* Menu Showcase */
+    .menu-items-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        width: 48%;
+    }
+    .testimonials-container {
+        gap: 20px;
+    }
+
+    /* Booking Section */
+    .booking-image img {
+        width: 100%; /* Make image take full width of its flex container */
+        max-width: 400px; /* Constrain max size */
+        transform: translateX(0); /* Remove offset */
+    }
+
+    /* Footer */
+    .footer-content-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Top Bar & Nav */
+    .top-bar, .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+    .contact-info, .social-icons {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .main-nav .logo {
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .main-nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 3em;
+    }
+    .hero-content p {
+        font-size: 1.2em;
+    }
+    .reserve-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+    .carousel-arrows {
+        display: none; /* Hide arrows on small screens for static representation */
+    }
+
+    /* Menu Showcase */
+    .menu-showcase-section {
+        flex-direction: column;
+        min-height: auto;
+        padding: 30px 0;
+    }
+    .bg-image {
+        position: static;
+        transform: none !important;
+        margin-bottom: 20px;
+        width: 90%;
+        height: 250px;
+    }
+    .bg-left, .bg-right {
+        left: auto;
+        right: auto;
+    }
+    .menu-card {
+        width: 90%;
+        height: 450px;
+        margin-top: 20px;
+    }
+    .card-content h2 { font-size: 2.2em; }
+    .card-content p { font-size: 1em; }
+
+    /* Testimonials */
+    .testimonials-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .testimonial-card {
+        width: 90%;
+        max-width: 500px;
+    }
+    .testimonials-container .carousel-arrow {
+        display: none;
+    }
+    .testimonials-section .section-title {
+        font-size: 2.2em;
+    }
+    .testimonials-section .section-tagline {
+        font-size: 1.2em;
+    }
+
+    /* Chef Special Menu */
+    .menu-items-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+        gap: 20px;
+    }
+    .item-image-wrapper {
+        height: 220px;
+    }
+
+    /* Booking Section */
+    .booking-section {
+        flex-direction: column;
+        padding: 40px 0;
+    }
+    .booking-content {
+        padding: 20px 5%;
+        text-align: center;
+        order: 2;
+    }
+    .booking-image {
+        order: 1;
+        justify-content: center;
+        width: 100%;
+    }
+    .booking-image img {
+        width: 80%;
+        max-width: 500px;
+        transform: translateX(0);
+    }
+
+    /* Newsletter Section */
+    .newsletter-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 25px 5%;
+    }
+    .newsletter-text-content {
+        flex: auto;
+    }
+    .newsletter-form {
+        flex: auto;
+        width: 100%;
+        justify-content: center;
+    }
+    .email-input {
+        flex-grow: 0;
+        width: 60%;
+        max-width: 300px;
+    }
+
+    /* Footer */
+    .footer-content-grid {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+        gap: 20px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .footer-bottom p {
+        margin-bottom: 10px;
+    }
+    .back-to-top-arrow {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        padding: 30px 20px;
+    }
+    .testimonial-text {
+        font-size: 1em;
+    }
+    .reviewer-avatar {
+        width: 60px;
+        height: 60px;
+    }
+    .reviewer-name {
+        font-size: 1.2em;
+    }
+    .reviewer-source {
+        font-size: 0.85em;
+    }
+
+    /* Chef Special Menu */
+    .item-title {
+        font-size: 1.2em;
+    }
+    .item-description {
+        font-size: 0.85em;
+    }
+    .chef-special-tag {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+
+    /* Booking Section */
+    .booking-title {
+        font-size: 2em;
+    }
+    .booking-text {
+        font-size: 1em;
+    }
+    .book-now-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    /* Newsletter Section */
+    .newsletter-title {
+        font-size: 1.4em;
+    }
+    .newsletter-description {
+        font-size: 0.85em;
+    }
+    .newsletter-form {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .email-input, .subscribe-button {
+        width: 90%;
+        max-width: 300px;
+    }
+}
